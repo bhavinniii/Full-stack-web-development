@@ -1,13 +1,59 @@
-var body = document.querySelector('body')
-var button = document.querySelector('button')
+let value = new Promise((resolve,reject)=>{
+setTimeout(()=>{
+    resolve("Hello")
+},3000)
+})
+
+console.log(value)
+
+
+setTimeout(()=>{
+    console.log(value)
+},6000)
 
 
 
-const callbackfunc = (event) => {
-   body.classList.toggle('dark')
-}
 
-button.addEventListener('click',callbackfunc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
