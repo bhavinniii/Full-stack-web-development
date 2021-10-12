@@ -1,7 +1,8 @@
-const { Console } = require("console")
-const path= require("path")
-console.log(path.resolve('./app.js'))
-console.log(path.relative('./',"./temp/utilis.js"))
-console.log(path.extname('./app.js'))
-console.log(path.dirname('./temp/utilis.js'))
-console.log(path.join(_dirname, 'app.js'))
+const fs = require('fs')
+
+fs.readFileSync('./test.txt', (error,data)=>{
+    if(error) console.log(error)
+else console.log(typeof data)
+})
+console.log(fs.readFileSync('./test.txt', 'utf-8'))
+ 
